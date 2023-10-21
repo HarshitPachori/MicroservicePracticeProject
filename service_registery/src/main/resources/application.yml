@@ -1,0 +1,9 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  # due to below property this service registry did not self register as by default these both properties remains false always
+  client:
+    register-with-eureka: false
+    fetch-registry: false
